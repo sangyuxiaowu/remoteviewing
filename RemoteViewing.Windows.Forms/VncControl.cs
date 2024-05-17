@@ -449,7 +449,9 @@ namespace RemoteViewing.Windows.Forms
                 {
                     try
                     {
-                        Clipboard.SetText(e.Contents);
+                        this.Invoke((MethodInvoker)delegate {
+                            Clipboard.SetText(e.Contents);
+                        });
                         this.expectedClipboard = e.Contents;
                     }
                     catch (ExternalException)
