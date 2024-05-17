@@ -1,5 +1,4 @@
 # RemoteViewing (Sang branch)
-[![Build status](https://ci.appveyor.com/api/projects/status/cglx3gjok6a8w6mv?svg=true)](https://ci.appveyor.com/project/qmfrederik/remoteviewing)
 
 RemoteViewing is a .NET-native VNC client and server library.
 
@@ -14,7 +13,7 @@ RemoteViewing uses the BSD license.
 Install using the command line:
 
 ```
-Install-Package Quamotion.RemoteViewing
+Install-Package Sang.RemoteViewing
 ```
 
 ## Samples
@@ -27,4 +26,6 @@ This repository contains three sample projects:
 
 ## Credits
 The code in this repository is based on the download available at
+
+https://github.com/Hofersa/remoteviewing
 http://www.zer7.com/software/remoteviewing
