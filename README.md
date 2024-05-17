@@ -1,4 +1,4 @@
-# RemoteViewing (Quamotion branch)
+# RemoteViewing (Sang branch)
 [![Build status](https://ci.appveyor.com/api/projects/status/cglx3gjok6a8w6mv?svg=true)](https://ci.appveyor.com/project/qmfrederik/remoteviewing)
 
 RemoteViewing is a .NET-native VNC client and server library.

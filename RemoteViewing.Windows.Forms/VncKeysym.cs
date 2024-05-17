@@ -26,7 +26,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 #endregion
 
-#if NET462
+#if NET462 || (WINDOWS && NET8_0)
 using RemoteViewing.Vnc;
 using System;
 using System.Windows.Forms;

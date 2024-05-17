@@ -1,6 +1,6 @@
 ﻿namespace RemoteViewing.Windows.Forms
 {
-#if NET462
+#if NET462 || (WINDOWS && NET8_0)
     partial class VncControl
     {
         /// <summary> 

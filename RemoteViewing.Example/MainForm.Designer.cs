@@ -56,7 +56,7 @@
             this.mainTableLayoutPanel.RowCount = 2;
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.mainTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.mainTableLayoutPanel.Size = new System.Drawing.Size(636, 452);
+            this.mainTableLayoutPanel.Size = new System.Drawing.Size(636, 417);
             this.mainTableLayoutPanel.TabIndex = 0;
             // 
             // topTableLayoutPanel
@@ -83,16 +83,16 @@
             this.topTableLayoutPanel.Name = "topTableLayoutPanel";
             this.topTableLayoutPanel.RowCount = 1;
             this.topTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.topTableLayoutPanel.Size = new System.Drawing.Size(636, 29);
+            this.topTableLayoutPanel.Size = new System.Drawing.Size(636, 28);
             this.topTableLayoutPanel.TabIndex = 0;
             // 
             // txtPassword
             // 
             this.txtPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtPassword.Location = new System.Drawing.Point(543, 3);
+            this.txtPassword.Location = new System.Drawing.Point(546, 3);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(90, 20);
+            this.txtPassword.Size = new System.Drawing.Size(87, 21);
             this.txtPassword.TabIndex = 3;
             // 
             // lblPassword
@@ -102,7 +102,7 @@
             this.lblPassword.Location = new System.Drawing.Point(481, 0);
             this.lblPassword.Margin = new System.Windows.Forms.Padding(13, 0, 3, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(56, 29);
+            this.lblPassword.Size = new System.Drawing.Size(59, 28);
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "Password:";
             this.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -112,7 +112,7 @@
             this.btnConnect.AutoSize = true;
             this.btnConnect.Location = new System.Drawing.Point(3, 3);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(57, 23);
+            this.btnConnect.Size = new System.Drawing.Size(57, 22);
             this.btnConnect.TabIndex = 0;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -125,7 +125,7 @@
             this.lblHostname.Location = new System.Drawing.Point(76, 0);
             this.lblHostname.Margin = new System.Windows.Forms.Padding(13, 0, 3, 0);
             this.lblHostname.Name = "lblHostname";
-            this.lblHostname.Size = new System.Drawing.Size(58, 29);
+            this.lblHostname.Size = new System.Drawing.Size(59, 28);
             this.lblHostname.TabIndex = 1;
             this.lblHostname.Text = "Hostname:";
             this.lblHostname.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -134,10 +134,10 @@
             // 
             this.lblPort.AutoSize = true;
             this.lblPort.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPort.Location = new System.Drawing.Point(341, 0);
+            this.lblPort.Location = new System.Drawing.Point(337, 0);
             this.lblPort.Margin = new System.Windows.Forms.Padding(13, 0, 3, 0);
             this.lblPort.Name = "lblPort";
-            this.lblPort.Size = new System.Drawing.Size(29, 29);
+            this.lblPort.Size = new System.Drawing.Size(35, 28);
             this.lblPort.TabIndex = 2;
             this.lblPort.Text = "Port:";
             this.lblPort.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -145,18 +145,18 @@
             // txtHostname
             // 
             this.txtHostname.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtHostname.Location = new System.Drawing.Point(140, 3);
+            this.txtHostname.Location = new System.Drawing.Point(141, 3);
             this.txtHostname.Name = "txtHostname";
-            this.txtHostname.Size = new System.Drawing.Size(185, 20);
+            this.txtHostname.Size = new System.Drawing.Size(180, 21);
             this.txtHostname.TabIndex = 1;
             this.txtHostname.Text = "127.0.0.1";
             // 
             // txtPort
             // 
             this.txtPort.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtPort.Location = new System.Drawing.Point(376, 3);
+            this.txtPort.Location = new System.Drawing.Point(378, 3);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(89, 20);
+            this.txtPort.Size = new System.Drawing.Size(87, 21);
             this.txtPort.TabIndex = 2;
             this.txtPort.Text = "5900";
             // 
@@ -166,16 +166,15 @@
             this.vncControl.AllowClipboardSharingToServer = true;
             this.vncControl.AllowInput = true;
             this.vncControl.AllowRemoteCursor = true;
-            this.vncControl.HideLocalCursor = false;
-            //this.vncControl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.vncControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.vncControl.BackColor = System.Drawing.Color.Black;
             vncClient1.MaxUpdateRate = 15D;
             vncClient1.UserData = null;
             this.vncControl.Client = vncClient1;
-            this.vncControl.Location = new System.Drawing.Point(201, 154);
+            this.vncControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.vncControl.HideLocalCursor = false;
+            this.vncControl.Location = new System.Drawing.Point(3, 31);
             this.vncControl.Name = "vncControl";
-            this.vncControl.Size = new System.Drawing.Size(234, 173);
+            this.vncControl.Size = new System.Drawing.Size(630, 383);
             this.vncControl.TabIndex = 4;
             this.vncControl.Connected += new System.EventHandler(this.OnConnected);
             this.vncControl.ConnectionFailed += new System.EventHandler(this.OnConnectionFailed);
@@ -183,9 +182,9 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 452);
+            this.ClientSize = new System.Drawing.Size(636, 417);
             this.Controls.Add(this.mainTableLayoutPanel);
             this.Name = "MainForm";
             this.Text = "RemoteViewing - Example VNC Client";
