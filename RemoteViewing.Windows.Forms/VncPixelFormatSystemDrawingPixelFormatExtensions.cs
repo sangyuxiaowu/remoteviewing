@@ -37,6 +37,9 @@ namespace RemoteViewing.Windows.Forms
                 case PixelFormat.Format32bppRgb:
                     return VncPixelFormat.RGB32;
 
+                case PixelFormat.Format32bppArgb:
+                    return VncPixelFormat.ARGB32;
+
                 default:
                     throw new NotSupportedException($"The pixelformat '{pixelFormat}' is not supported.");
             }
