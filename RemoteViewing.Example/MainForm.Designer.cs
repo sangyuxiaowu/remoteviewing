@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            RemoteViewing.Vnc.VncClient vncClient1 = new RemoteViewing.Vnc.VncClient();
+            RemoteViewing.Vnc.VncClient vncClient2 = new RemoteViewing.Vnc.VncClient();
             this.mainTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.topTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -167,9 +167,9 @@
             this.vncControl.AllowInput = true;
             this.vncControl.AllowRemoteCursor = true;
             this.vncControl.BackColor = System.Drawing.Color.Black;
-            vncClient1.MaxUpdateRate = 15D;
-            vncClient1.UserData = null;
-            this.vncControl.Client = vncClient1;
+            vncClient2.MaxUpdateRate = 15D;
+            vncClient2.UserData = null;
+            this.vncControl.Client = vncClient2;
             this.vncControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.vncControl.HideLocalCursor = false;
             this.vncControl.Location = new System.Drawing.Point(3, 31);
