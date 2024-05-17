@@ -18,11 +18,13 @@
   <ItemGroup>
     <PackageReference Include="System.CommandLine" Version="2.0.0-beta3.22114.1" />
 	
-	<PackageReference Include="Quamotion.RemoteViewing.LibVnc.NativeBinaries" Version="1.1.197" />
+	<PackageReference Include="Quamotion.RemoteViewing.LibVnc.NativeBinaries" Version="1.1.211" />
 	<PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     
     <ProjectReference Include="..\RemoteViewing.LibVnc\RemoteViewing.LibVnc.csproj" />
+    
+    <ProjectReference Include="..\RemoteViewing.Tests\RemoteViewing.Tests.csproj" />
     <ProjectReference Include="..\RemoteViewing\RemoteViewing.csproj" />
     <ProjectReference Include="..\RemoteViewing.Windows.Forms\RemoteViewing.Windows.Forms.csproj" />
   </ItemGroup>
