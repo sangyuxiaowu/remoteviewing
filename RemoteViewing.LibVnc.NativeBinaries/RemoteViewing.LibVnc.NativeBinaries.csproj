@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net462;netstandard2.0;net5.0</TargetFrameworks>
+    <TargetFrameworks>net462;netstandard2.0;net6.0</TargetFrameworks>
     
     <Description>RemoteViewing.LibVnc.NativeBinaries contains the native libvnc binaries, compiled for Windows and macOS.</Description>
     <AssemblyTitle>RemoteViewing.LibVnc - A .NET VNC server library.</AssemblyTitle>
@@ -12,7 +12,6 @@
 
     <PackageProjectUrl>https://github.com/quamotion/remoteviewing/</PackageProjectUrl>
     <PackageTags>VNC RFB remote desktop client server Hextile Copyrect Zlib</PackageTags>
-    <CodeAnalysisRuleSet>..\RemoteViewing.ruleset</CodeAnalysisRuleSet>
 
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>

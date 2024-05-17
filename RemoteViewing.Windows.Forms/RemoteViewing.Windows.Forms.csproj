@@ -5,7 +5,7 @@
     <Copyright>Copyright © 2013 James F. Bellinger &lt;http://www.zer7.com/software/remoteviewing&gt;</Copyright>
     <VersionPrefix>1.0.8</VersionPrefix>
     <Authors>James F. Bellinger, Frederik Carlier</Authors>
-    <TargetFrameworks>net462;net5.0</TargetFrameworks>
+    <TargetFrameworks>net462;net6.0</TargetFrameworks>
     <AssemblyName>RemoteViewing.Windows.Forms</AssemblyName>
     <AssemblyOriginatorKeyFile>RemoteViewing.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
@@ -14,7 +14,6 @@
     <PackageProjectUrl>https://github.com/qmfrederik/remoteviewing/</PackageProjectUrl>
     <PackageTags>VNC RFB remote desktop client server Hextile Copyrect Zlib</PackageTags>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
-    <CodeAnalysisRuleSet>..\RemoteViewing.ruleset</CodeAnalysisRuleSet>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
@@ -31,8 +30,8 @@
     <ProjectReference Include="..\RemoteViewing\RemoteViewing.csproj" />
   </ItemGroup>
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0'">
-    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0'">
+    <PackageReference Include="System.Drawing.Common" Version="8.0.5" />
   </ItemGroup>
 
   <ItemGroup>

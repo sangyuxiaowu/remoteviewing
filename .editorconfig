@@ -1,0 +1,38 @@
+# NOTE: Requires **VS2019 16.3** or later
+
+# Rules for RemoteViewing
+# Description: Code analysis rules for RemoteViewing.
+
+# Code files
+[*.{cs,vb}]
+
+
+dotnet_diagnostic.SA1118.severity = none
+
+dotnet_diagnostic.SA1124.severity = none
+
+dotnet_diagnostic.SA1130.severity = none
+
+dotnet_diagnostic.SA1200.severity = none
+
+dotnet_diagnostic.SA1208.severity = none
+
+dotnet_diagnostic.SA1600.severity = none
+
+dotnet_diagnostic.SA1604.severity = none
+
+dotnet_diagnostic.SA1606.severity = none
+
+dotnet_diagnostic.SA1611.severity = none
+
+dotnet_diagnostic.SA1615.severity = none
+
+dotnet_diagnostic.SA1618.severity = none
+
+dotnet_diagnostic.SA1633.severity = none
+
+dotnet_diagnostic.SA1636.severity = none
+
+dotnet_diagnostic.SA1641.severity = none
+
+dotnet_diagnostic.SA1652.severity = none

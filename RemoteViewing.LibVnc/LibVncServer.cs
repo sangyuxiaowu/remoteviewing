@@ -332,6 +332,7 @@ namespace RemoteViewing.LibVnc
             serverFormat.RedShift = (byte)pixelFormat.RedShift;
             serverFormat.GreenShift = (byte)pixelFormat.GreenShift;
             serverFormat.BlueShift = (byte)pixelFormat.BlueShift;
+            serverFormat.Depth = (byte)pixelFormat.BitDepth;
 
             this.server.ServerFormat = serverFormat;
         }

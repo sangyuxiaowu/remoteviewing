@@ -5,7 +5,7 @@
     <Copyright>Copyright © 2013 James F. Bellinger &lt;http://www.zer7.com/software/remoteviewing&gt;</Copyright>
     <VersionPrefix>1.0.8</VersionPrefix>
     <Authors>James F. Bellinger, Frederik Carlier</Authors>
-    <TargetFrameworks>net462;net5.0</TargetFrameworks>
+    <TargetFrameworks>net462;net6.0</TargetFrameworks>
     <AssemblyName>RemoteViewing</AssemblyName>
     <AssemblyOriginatorKeyFile>RemoteViewing.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
@@ -14,7 +14,6 @@
     <PackageProjectUrl>https://github.com/qmfrederik/remoteviewing/</PackageProjectUrl>
     <PackageTags>VNC RFB remote desktop client server Hextile Copyrect Zlib</PackageTags>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
-    <CodeAnalysisRuleSet>..\RemoteViewing.ruleset</CodeAnalysisRuleSet>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -24,10 +23,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="sharpcompress" Version="0.24.0" />
-    <PackageReference Include="Quamotion.TurboJpegWrapper" Version="2.0.21" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+    <PackageReference Include="sharpcompress" Version="0.37.2" />
+    <PackageReference Include="Quamotion.TurboJpegWrapper" Version="2.0.32" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
   </ItemGroup>
 
