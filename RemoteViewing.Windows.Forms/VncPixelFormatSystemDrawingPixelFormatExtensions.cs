@@ -19,6 +19,11 @@ namespace RemoteViewing.Windows.Forms
                 return PixelFormat.Format32bppRgb;
             }
 
+            if (vncPixelFormat.Equals(VncPixelFormat.ARGB32))
+            {
+                return PixelFormat.Format32bppArgb;
+            }
+
             throw new NotSupportedException($"PixelFormat not supported: {vncPixelFormat}");
         }
 

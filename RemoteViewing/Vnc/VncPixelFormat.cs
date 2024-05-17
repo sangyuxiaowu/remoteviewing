@@ -65,7 +65,7 @@ namespace RemoteViewing.Vnc
                 throw new ArgumentOutOfRangeException(nameof(bitsPerPixel));
             }
 
-            if (bitDepth != 6 && bitDepth != 16 && bitDepth != 24)
+            if (bitDepth != 6 && bitDepth != 16 && bitDepth != 24 && bitDepth != 32)
             {
                 throw new ArgumentOutOfRangeException(nameof(bitDepth));
             }
@@ -102,6 +102,12 @@ namespace RemoteViewing.Vnc
         /// Gets a <see cref="VncPixelFormat"/> with 32bits per pixel, 8 bits of red, green and blue channels.
         /// </summary>
         public static VncPixelFormat RGB32 { get; } = new VncPixelFormat(32, 24, 8, 16, 8, 8, 8, 0);
+
+        /// <summary>
+        /// Gets a <see cref="VncPixelFormat"/> with 32bits per pixel, 8 bits of red, green, blue and alpha channels.
+        /// </summary>
+        public static VncPixelFormat ARGB32 { get; } = new VncPixelFormat(32, 32, 8, 16, 8, 8, 8, 0);
+
 
         /// <summary>
         /// Gets a <see cref="VncPixelFormat"/> with 16 bits per pixel with 5 bits of red, 6 bits of green and 5 bits of blue channels.
